@@ -1,0 +1,23 @@
+Konwertowanje daty
+qyglad iddertfikafora
+kolor adminow
+Mozliwosc dla administratora
+Scalanie historii przez admina
+Bany
+Zapraszanie i alceptowanie
+szukanie po godzinach, zawartosci
+Edytowanie postow
+rozmiar zmienny okna pisania
+Graciczne buzki
+lajowanie odpowedzi
+Przesylanie plikow
+Chatroomy na pasku i przewijanke ich
+Oznaczanue grupy jako podzbior uzytkownikom i wysylanie im wiadomosci
+Calosc zrovic na oba warianty, implementacja tylko na androidak
+Identyfikacja uzytkoenika: nick dla roomow
+
+Opis problemu i wozja moze byc razdm bo tak
+
+Cash pamietany lokalnie
+
+Paldigo

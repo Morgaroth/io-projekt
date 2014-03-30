@@ -1,0 +1,618 @@
+﻿<html><!--
+ Archive processed by SingleFile 
+ url: http://pl.docs.pld-linux.org/uslugi_jabber2.html 
+ saved date: Sun Mar 30 2014 15:02:35 GMT+0200 (CEST) 
+--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jabber 2 - Serwer typu Instant Messaging</title>
+<style type="text/css">
+body {
+        font-family: sans-serif,Helvetica;
+        font-size: 16px;
+        color: #5e5e5e;
+        background-color: #fff;
+}
+div.small {
+        font-family: sans-serif,Helvetica;
+        font-size: 12px;
+        color: #000;
+}
+
+div.screen {
+        font-family: console, terminal, monospace;
+        font-size: 12px;
+        color: #000;
+	border: 1pt solid #ffe2ab;
+	background: #fff8eb;
+	padding: 0.5em;
+	-moz-border-radius: 10px;
+}
+h1{
+        font-size: 14px;
+        color: #003dea;
+}
+h2, h3 {
+  text-align: left;
+  color: #003dea;
+  background-color: #fff;
+  border-bottom: 1px solid #5e5e5e;
+  color: #003dea;
+  margin: 2em 0 0 0; 
+}
+
+h2{
+  width: 97%;
+  font-size: 20px;
+  margin: 0 0 0 3%;
+  border-bottom: 2px solid #5e5e5e;
+  
+}
+h3{
+  font-size: 18px;
+}
+p,h2
+{
+  margin: 1.5em 0 0.5em 0;
+}
+td table
+{
+	border-collapse: collapse;
+}
+
+div.example {
+  background-color: #eee;
+  padding: 3px;
+}
+div.example pre {
+
+
+}
+div.example h6.example {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 2px;
+}
+.index-field{
+  background: #fff;
+}
+.index-field-slected{
+  background: #fff;
+ 
+}
+.index-field-main{
+  background: #fff8eb;
+  test-align: center;
+}
+.tab-norm-field{
+  background: #eee;
+  border:	1px solid #555;
+  font-size:	0.8em;
+}
+table thead tr td{
+font-weight: bold;
+}
+
+
+a {
+        text-decoration: none;
+        color: #003dea;
+}
+a:hover {
+        text-decoration: none;
+        color: #003dea;
+}</style>
+<style type="text/css"></style><style type="text/css"></style><link type="image/x-icon" rel="shortcut icon" href="data:text/html; charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCAxLjAgU3RyaWN0Ly9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvVFIveGh0bWwxL0RURC94aHRtbDEtc3RyaWN0LmR0ZCI+CjxodG1sIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBsYW5nPSJwbCIgeG1sOmxhbmc9InBsIj4KPGhlYWQ+Cjx0aXRsZT5OaWUgem5hbGV6aW9ubyBvYmlla3R1ITwvdGl0bGU+CjxsaW5rIHJldj0ibWFkZSIgaHJlZj0ibWFpbHRvOmNpZXNpZWxAcGxkLWxpbnV4Lm9yZyIgLz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj48IS0tLyotLT48IVtDREFUQVsvKj48IS0tKi8gCiAgICBib2R5IHsgY29sb3I6ICMwMDAwMDA7IGJhY2tncm91bmQtY29sb3I6ICNGRkZGRkY7IH0KICAgIGE6bGluayB7IGNvbG9yOiAjMDAwMENDOyB9CiAgICBwLCBhZGRyZXNzIHttYXJnaW4tbGVmdDogM2VtO30KICAgIHNwYW4ge2ZvbnQtc2l6ZTogc21hbGxlcjt9Ci8qXV0+Ki8tLT48L3N0eWxlPgo8L2hlYWQ+Cgo8Ym9keT4KPGgxPk5pZSB6bmFsZXppb25vIG9iaWVrdHUhPC9oMT4KPHA+CgoKICAgIE5pZSB6bmFsZXppb25vICYjMzgwOyYjMjYxO2RhbmVnbyBVUkwtYSBuYSB0eW0gc2Vyd2VyemUuCgogIAogICAgSmUmIzM0NztsaSB3cGlzYSYjMzIyO2UmIzM0NzsgVVJMLWEgciYjMjgxO2N6bmllLCBzcHJhd2QmIzM3ODssIGN6eSBzaSYjMjgxOyBuaWUgcG9teWxpJiMzMjI7ZSYjMzQ3Oy4KCiAgCgo8L3A+CjxwPgpKZSYjMzQ3O2xpIG15JiMzNDc7bGlzeiwgJiMzODA7ZSBqZXN0IHRvIGImIzMyMjsmIzI2MTtkIHRlZ28gc2Vyd2VyYSwgc2tvbnRha3R1aiBzaSYjMjgxOyB6CjxhIGhyZWY9Im1haWx0bzpjaWVzaWVsQHBsZC1saW51eC5vcmciPmFkbWluaXN0cmF0b3JlbTwvYT4uCgo8L3A+Cgo8aDI+RXJyb3IgNDA0PC9oMj4KPGFkZHJlc3M+CiAgPGEgaHJlZj0iLyI+cGwuZG9jcy5wbGQtbGludXgub3JnPC9hPjxiciAvPgogIDxzcGFuPkFwYWNoZS8yLjQuNiAoVW5peCkgT3BlblNTTC8xLjAuMWU8L3NwYW4+CjwvYWRkcmVzcz4KPC9ib2R5Pgo8L2h0bWw+Cgo="></head>
+<body><table cellspacing="5" width="100%" cellpadding="0"><tbody><tr>
+<td width="15%" valign="top">
+<table width="100%" cellpadding="0"><tbody><tr><td bgcolor="#FFFFFF" align="center"><a href="http://pl.docs.pld-linux.org/index.html"><img width="130" height="124" alt="Bociek PLD - Pisarz" src="data:image/png;base64,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" border="0"></a></td></tr></tbody></table>
+<table cellspacing="4" cellpadding="3">
+<tbody><tr><td class="index-field-main"><div class="small"><b>I. Informacje podstawowe</b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/wstep_streszczenie.html">
+		Wprowadzenie
+	</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/linki_podstawowe.html">Zasoby sieciowe PLD</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/wstep_logo.html">
+  Historia powstania naszego logo
+  </a></div></td></tr>
+<tr><td class="index-field-main"><div class="small"><b>II. Instalacja</b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/instalacja_chroot_wstep.html">Instalacja przy użyciu chroota</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/instalacja_upgrade.html">Aktualizacje</a></div></td></tr>
+<tr><td class="index-field-main"><div class="small"><b>III. Podręcznik użytkownika </b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/podstawy_wstep.html">Podstawy</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/podstawy_ilosc_miejsca.html">Zasoby systemu</a></div></td></tr>
+<tr><td class="index-field-main"><div class="small"><b>IV. Podręcznik administratora</b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/pakiety_wprowadzenie.html">Zarządzanie pakietami</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/bootloader_wstep.html">Bootloader</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/kernel-urzadzenia_kernel.html">Kernel i urządzenia</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/konfiguracja_sysconfig_system.html">Konfiguracja systemu</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/pl_dysk_wstep.html">Pamięci masowe</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/administracja_rescue.html">Administracja</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/pl_siec_wstep.html">Interfejsy sieciowe</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/siec_routing_statyczny.html">Zastosowania sieciowe</a></div></td></tr>
+<tr><td class=".index-field-slected">Usługi dostępne w PLD</td></tr>
+<tr><td><table>
+<tbody><tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_wstep.html">Usługi - wstęp</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_alsa_step.html">ALSA - Dźwięk w Linuksie</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_apache.html">Apache - Serwer stron internetowych</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_named.html">BIND - Serwer Nazw</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_cron.html">CRON - Cykliczne wykonywanie zadań</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_cups.html">CUPS - Popularny system druku dla Uniksa</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_dhcpd.html">DHCPD - Dynamic Host Configuration Protocol Daemon</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_exim.html">Exim - Transport poczty elektronicznej (MTA)</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_heimdal.html">Heimdal - Implementacja protokołu Kerberos</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small">Jabber 2 - Serwer typu Instant Messaging</div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_bazydanych__mysql.html">MySQL - System Zarządzania Relacyjnymi Bazami Danych (ang. RDBMS)</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_nfs.html">NFS - Network File System</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_pdns.html">PDNS (Power DNS) - Serwer Nazw</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_postfix.html">Postfix - Transport poczty elektronicznej (MTA)</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_postgresql.html">PostgreSQL - Baza danych SQL</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_proftpd.html">ProFTPD - serwer FTP</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_samba.html">Samba - współpraca z Windows</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_snort.html">Snort - Sieciowy System Wykrywania Włamań</a></div></td>
+</tr>
+<tr>
+<td width="20" valign="top" align="right"></td>
+<td><div class="small"><a href="http://pl.docs.pld-linux.org/uslugi_syslog-ng.html">Syslog-ng</a></div></td>
+</tr>
+</tbody></table></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/x_wstep.html">X-Window</a></div></td></tr>
+<tr><td class="index-field-main"><div class="small"><b>V. Tworzenie PLD - Praktyczny poradnik</b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/devel_potrzeby.html">Możliwa droga do zostania szeregowym developerem PLD</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/devel_cvs_wstep.html">W krainie CVS - czyli wielki kocioł</a></div></td></tr>
+<tr><td class="index-field-main"><div class="small"><b>VI. O podręczniku</b></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/autorzy_polskich_docow.html">
+		O podręczniku
+	</a></div></td></tr>
+<tr><td class="index-field"><div class="small"><a href="http://pl.docs.pld-linux.org/licencja_1_1.html">
+		Licencja i prawa autorskie
+	</a></div></td></tr>
+<tr><td class="index-field-selected" align="left"><small><a href="http://pl.docs.pld-linux.org/bookinfo.html">O tej książce</a></small></td></tr>
+<tr><td class="index-field-main" align="left"><small><a href="http://pl.docs.pld-linux.org/toc.html">Spis treści</a></small></td></tr>
+<tr><td class="index-field-main"><table>
+<tbody><tr><td><b>Inne wersje tego dokumentu</b></td></tr>
+<tr><td><small><a href="http://pl.docs.pld-linux.org/pld_dok.html">HTML (jeden plik)</a></small></td></tr>
+</tbody></table></td></tr>
+<tr><td class="index-field-main"><table>
+<tbody><tr><td><b>Odnośniki</b></td></tr>
+<tr><td><small><a href="http://pl.docs.pld-linux.org/devel_howto.html">Tworzymy dokumentację PLD</a></small></td></tr>
+<tr><td><small><a href="http://pld-linux.org/">Strona PLD</a></small></td></tr>
+<tr><td><small><a href="http://lists.pld-linux.org/mailman/listinfo">Listy dyskusyjne PLD</a></small></td></tr>
+</tbody></table></td></tr>
+</tbody></table>
+</td>
+<td valign="top">
+<h2>Jabber 2 - Serwer typu Instant Messaging</h2>
+<div align="right"><table cellpadding="2"><tbody><tr>
+<td><a href="http://pl.docs.pld-linux.org/uslugi_heimdal.html"><img border="0" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAGFBMVEUcO+kXVu9Gcu2gt/nDz/jt8Pj8+On///8/14tcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1QsaFhoSnWz1hwAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAAg0lEQVQY033RzQnAIAwG0NA6gCOIoxRp7z10AA8uoOD6jT9JEyjm9j4laoSqCxYul3K2ytmCNFK6Ubhx+9x5szufCCEEmNyfFLGDAVpNZGKK3jsDzFZoSfIpXJwI0JWD0a9yQOdTwJ4B33cGh3yvU+8dO9S8WqDmiYGed3HX8j9+/+8FYvSSXEoG1YAAAAAASUVORK5CYII=" alt="&amp;lt;-"></a></td>
+<td><a href="http://pl.docs.pld-linux.org/uslugi_bazydanych__mysql.html"><img border="0" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAGFBMVEUcO+kXVu9Gcu2gt/nDz/jt8Pj8+On///8/14tcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1QsaFhktACeLeQAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAAfUlEQVQY033ROQ6AIBBA0ZGTGKLUdrQUJFxEOIGJ1xcZmEWNdO9HWeHUA94+0sOT1wYRmkVAc2ieOTSvHCDGCC5TgFD/diVvPXSX8QUEY231CNUFBwY2BuFd+6ZJNB+S1uscHuz7JeJ5FiKd13h1Hyap+yGimc2CX+/x+34X2OmQT58VtUwAAAAASUVORK5CYII=" alt="-&gt;"></a></td>
+</tr></tbody></table></div>
+<table><tbody><tr>
+<td width="3%">&nbsp;</td>
+<td>
+
+	<h3>Wstęp</h3>
+		
+		<p>
+			Protokół jabber służy głównie do przesyłania wiadomości typu
+			Instant Messaging (czyli działa podobnie jak inne znane
+			komunikatory np. icq, tlen, gadu-gadu itp.). Zaletą jabbera
+			jest to, że jest otwarty, zapewnia darmową i pełną infrastrukturę
+			(serwery, a także klienty) dla osób prywatnych i użytkowników
+			komercyjnych. Charakteryzuje się także dużym bezpieczeństwem -
+			rozmowy, a także komunikacja między serwerami może być
+			szyfrowana.
+		</p>
+		<p>
+			W PLD jest kilka serwerów obsługujących komunikację
+			protokołu XMPP, który jest fundamentem Jabbera -
+			zatwierdzonym przez IETF w formie RFC (RFC od 3920 do 3923). 
+			Używany przez wielu ISP <strong>jabberd</strong> 
+			w wersji 1.4, zdobywający popularność <strong>ejaberd</strong> 
+			czy opisywany poniżej <strong>jabberd</strong> w
+			wersji 2.0.
+		</p>
+		<p>
+			Opisana zostanie podstawowa konfiguracja, umożliwiająca
+			połączenia szyfrowane, a do składowania danych przez
+			<strong>jabberd2</strong> wykorzystamy
+			silnik SQL <strong>Postgresql</strong>.
+		</p>
+	
+	<h3>Instalacja</h3>
+		
+		<p>
+			Pakiet <strong>jabberd2</strong> instalujemy
+			za pomocą poldka:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>poldek&gt; install jabber-common jabberd</pre></div></td></tr></tbody></table></p>
+		<p>
+			Oczywiście, jeżeli do tej pory nie mamy zainstalowanego
+			<strong>Postgresql</strong> należy
+			zainstalować go także. Należy pamiętać, że
+			<strong>jabberd2</strong> może współpracować
+			także z <strong>MySQL</strong>,
+			<strong>sqlite3</strong>, a także znacznie
+			prostrzą wersją bazy <strong>db</strong>.
+		</p>
+	
+	<h3>Konfiguracja DNS i rekordów SRV</h3>
+		
+		<p>
+			Zanim zaczniemy, musimy stworzyć domenę, która
+			jednoznacznie będzie wskazywała na maszynę Jabbera.
+			Dodamy także rekordy SRV, które służą do zapytań
+			domenowych przez demony Jabbera.
+		</p>
+		<p>
+			Przykład konfiguracji zostanie przedstawiony dla
+			serwera nazw <strong>Bind</strong>. Zmian
+			dokonujemy w odpowiednim pliku stref w katalogu
+			<i><tt>/var/lib/named/M</tt></i>.
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>; Jabber
+jabber                  IN      A       10.1.1.1 ;Tu wpisujemy IP naszej domeny
+_jabber._tcp.jabber             IN SRV 20 0 5269 domena.org.
+_xmpp-server._tcp.jabber        IN SRV 20 0 5269 domena.org.
+_xmpp-client._tcp.jabber        IN SRV 20 0 5222 domena.org.</pre></div></td></tr></tbody></table></p>
+		<p>
+			Oczywiście nie możemy zapomnieć o zmianie rekordu
+			serial w strefie domeny i restarcie demona
+			<i><tt>named</tt></i>
+		</p>
+	
+	<h3>Konfiguracja portów (jeżeli korzystamy z firewall-a) </h3>
+		
+		<p>
+			W przypadku wykorzystwania zapór ogniowych w systemie
+			powinniśmy otworzyć porty tcp dla następujących
+			portów:
+		</p>
+		<ul>
+			<li>
+				<p>
+					5222 - Dla komunikacji klienckiej
+					(połączenie nieszyfrowane)
+				</p>
+			</li>
+			<li>
+				<p>
+					5223 - Dla komunikacji klienckiej
+					(połączenie szyfrowane SSL)
+				</p>	
+			</li>
+			<li>
+				<p>
+					5269 - Dla komunikacji między
+					serwerami Jabbera
+				</p>
+			</li>
+			<li>
+				<p>
+					5347 - Dla komunikacji między
+					serwerami Jabbera, wykorzystany przez dodatkowe transporty
+					(np. transport GG)
+				</p>
+			</li>
+		</ul>
+		<p>
+			Pamiętać należy, że powyższe porty są ustalone umownie
+			i w plikach konfiguracyjnych demona Jabber, a także
+			rekordach SRV możemy je
+			zmienić (np. dla portu klienckiego ustalić port 80) -
+			jednak zaleca się pozostawić proponowane wyżej porty.
+		</p>
+		<p>
+			Oczywiście, jeżeli nie chcemy aby nasz serwer był
+			widoczny na zewnątrz naszej sieci (np. jest
+			przeznaczony tylko dla wewnętrzej sieci intranetowej)
+			nie otwieramy portu przeznaczonego do komunikacji
+			między serwerami (u nas to porty 5269 i 5347).
+		</p>
+	
+	<h3>Podstawowa konfiguracja Jabberd2</h3>
+		
+		<p>
+			Możemy wreszcie skonfigurować wstępnie usługę
+			<strong>jabberd2</strong>. Wszystkie pliki
+			konfiguracyjne znajdują się w katalogu
+			<i><tt>/etc/jabber</tt></i>. 
+		</p>
+		<p>
+			W pliku <i><tt>/etc/jabber/c2s.xml</tt></i> w
+			okolicy tagu "local" dodajemy naszą domenę:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>&lt;!-- Local network configuration --&gt;
+  &lt;local&gt;
+  &lt;!-- Who we identify ourselves as. This should correspond
+       to the ID (host) that the session manager thinks it is. You can
+       specify more than one to support virtual hosts, as long as you
+       have additional session manager instances on the network to
+       handle those hosts. The realm attribute specifies the auth/reg
+       or SASL authentication realm for the host. If the attribute is
+       not specified, the realm will be selected by the SASL
+       mechanism, or will be the same as the ID itself. Be aware that
+       users are assigned to a realm, not a host, so two hosts in the
+       same realm will have the same users.
+       If no realm is specified, it will be set to be the same as the
+       ID. --&gt;
+   &lt;id&gt;jabber.domena.org&lt;/id&gt;</pre></div></td></tr></tbody></table></p>
+       <p>
+	       W pliku <i><tt>/etc/jabber/sm.xml</tt></i> w pierwszych
+	       linijkach także dodajemy naszą domenę:       
+       </p>   
+       <p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>&lt;sm&gt;
+  &lt;!-- Our ID on the network. Users will have this as the domain part of
+       their JID. If you want your server to be accessible from other
+       Jabber servers, this ID must be resolvable by DNS.s
+       (default: localhost) --&gt;
+   &lt;id&gt;jabber.domena.org&lt;/id&gt;</pre></div></td></tr></tbody></table></p>
+	<p>
+		Jeżeli chcemy, aby nasz serwer komunikował się z innymi
+		serwerami w pliku <i><tt>/etc/jabber/jabberd.cfg</tt></i>
+		kasujemy "#" w linijce z "s2s":
+	</p>
+	<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre># After sm and c2s are configured to use a fully qualified domain name
+# and proper SRV records are set in DNS uncoment this to enable
+# communication
+# with other Jabber servers
+s2s         /etc/jabber/s2s.xml</pre></div></td></tr></tbody></table></p>
+	<p>
+		Podstawowa konfiguracja jest już zrobiona. Domyślne ustawienie
+		tzw. "storage" czyli sposobu trzymania przez jabbera
+		informacji o użytkownikach jest zrobione w PLD w
+		<strong>db</strong>. Przy małej ilości użytkowników
+		jest to wystarczający sposób. Jednak przy większej ich
+		ilości, bardziej praktyczne jest trzymanie tych danych w
+		bazie SQL.
+	</p>
+	
+	<h3>Konfiguracja dla SQL (Postgresql)</h3>
+		
+		<p>
+			Przy poprawnie działającym postgresie, z uprawnionego
+			dla niego użytkownika tworzymy bazę
+			<em>jabberd2</em>
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>$ createdb -U postgres jabberd2</pre></div></td></tr></tbody></table></p>
+		<p>
+			Następnie przypisujemy do tej bazy użytkownika
+			<em>jabberd2</em> i ustalamy dla niego
+			hasło i opcje dostępu do bazy:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>$ createuser -P -U postgres jabberd2
+Enter password for user "jabberd2":
+Enter it again:
+Shall the new user be allowed to create databases? (y/n) n
+Shall the new user be allowed to create more new users? (y/n) n
+CREATE USER</pre></div></td></tr></tbody></table></p>
+	    <p>
+		Teraz musimy wypełnić nowoutworzoną bazę odpowiednimi tabelami
+		i polami. Z katalogu
+		<i><tt>/usr/share/doc/jabberd-2*</tt></i> należy
+		rozpakować (najlepiej do katalogu użytkownika, który może
+		działać na bazie postgresa) plik
+		<i><tt>db-setup.pgsql.gz</tt></i>. Po rozpakowaniu
+		przechodzimy do katalogu, gdzie został rozpakowany plik
+		<i><tt>db-setup.pgsql</tt></i> i wykonujemy:
+	    </p>	
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>$ psql -U jabberd2 jabberd2
+jabberd2=&gt;\i db-setup.pgsql</pre></div></td></tr></tbody></table></p>
+		<p>
+			Baza postgresa jest gotowa. Połączenie z bazą będzie
+			odbywać się po localhost, tak więc musimy zadbać o to,
+			żeby postgres umożliwiał takie połączenie
+		</p>
+		<p>
+			Została nam jeszcze konfiguracja w plikach jabbera.
+		</p>
+		<p>
+			W pliku <i><tt>/etc/jabber/sm.xml</tt></i>
+			szukamy sekcji "storage" i zmieniamy na:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>  &lt;!-- Storage database configuration --&gt;
+  &lt;storage&gt;
+  &lt;!-- By default, we use the MySQL driver for all storage --&gt;
+  &lt;driver&gt;pgsql&lt;/driver&gt;</pre></div></td></tr></tbody></table></p>
+		<p>
+			Dla porządku dodamy, że zamiast
+			<em>pgsql</em>, możemy także wykorzytać: mysql, 
+			ldap, sqlite (w zależności od mechanizmu jaki
+			wybraliśmy).
+		</p>
+		<p>
+			W tym samym pliku szukamy następnie sekcji "pgsql" aby
+			w odpowiednim miejscu wpisać hasło dostępu do bazy
+			jabberd2. Możemy tam także zmienić sposób dostępu:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>    &lt;!-- PostgreSQL driver configuration --&gt;
+    &lt;pgsql&gt;
+      &lt;!-- Database server host and port --&gt;
+      &lt;host&gt;localhost&lt;/host&gt;
+      &lt;port&gt;5432&lt;/port&gt;
+     
+      &lt;!-- Database name --&gt;
+      &lt;dbname&gt;jabberd2&lt;/dbname&gt;
+
+      &lt;!-- Database username and password --&gt;
+      &lt;user&gt;jabberd2&lt;/user&gt;
+      &lt;pass&gt;tu_wpisujemy_hasło_do_bazy&lt;/pass&gt;</pre></div></td></tr></tbody></table></p>
+      <p>
+	      Podobne zmiany wykonujemy w pliku
+	      <i><tt>/etc/jabber/c2s.xml</tt></i>. Umożliwiają one
+	      autentykacje użytkowników jabbera:
+      </p>
+      <p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>  &lt;!-- Authentication/registration database configuration --&gt;
+  &lt;authreg&gt;
+   &lt;!-- Backend module to use --&gt;
+   &lt;module&gt;pgsql&lt;/module&gt;</pre></div></td></tr></tbody></table></p>
+	<p>
+		I dalej w tym samym pliku (sekcja "pgsql")
+	</p>
+	<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>    &lt;!-- PostgreSQL module configuration --&gt;
+    &lt;pgsql&gt;
+      &lt;!-- Database server host and port --&gt;
+      &lt;host&gt;localhost&lt;/host&gt;
+      &lt;port&gt;5432&lt;/port&gt;
+
+      &lt;!-- Database name --&gt;
+      &lt;dbname&gt;jabberd2&lt;/dbname&gt;
+
+      &lt;!-- Database username and password --&gt;
+      &lt;user&gt;jabberd2&lt;/user&gt;
+      &lt;pass&gt;tu_wpisujemy_hasło_do_bazy&lt;/pass&gt;
+      &lt;/pgsql&gt;</pre></div></td></tr></tbody></table></p>
+      <p>
+	      Po zrestartowaniu demona jabberd możemy się już cieszyć bardziej
+	      zaawansowaną funkcjonalnością naszego komunikatora.
+      </p>
+      
+	<h3>Szyfrowanie</h3>
+		
+		<p>
+			Przed konfiguracją samego jabbera, musimy sprawdzić
+			czy mamy pakiet <strong>openssl</strong> i
+			wygenerować klucz:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre># openssl req -new -x509 -newkey rsa:1024 -days 3650 -keyout privkey.pem -out server.pem</pre></div></td></tr></tbody></table></p>
+		<p>
+			sam parametr <em>-days 3650</em> możemy
+			ustawić na krótszy lub dłuższy (oznacza on długość
+			ważności certyfikatu - w naszym przypadku 10 lat).
+		</p>
+		<p>
+			Po wykonaniu powyższego polecenia i wpisaniu
+			odpowiedzi na zadane pytania (zwróćmy tylko uwagę, abyśmy
+			w polu <em>Common Name</em> wpisali naszą
+			domenę, obsługiwaną przez serwer jabbera) usuniemy
+			hasło z klucza prywatnego:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre># openssl rsa -in privkey.pem -out privkey.pem</pre></div></td></tr></tbody></table></p>
+		<p>
+			Następnie połączymy oba klucze w jeden plik i
+			skasujemy klucz prywatny:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre># cat privkey.pem &gt;&gt; server.pem
+# rm privkey.pem</pre></div></td></tr></tbody></table></p>
+		<p>
+			Zmieniamy nazwę naszego certyfikatu (dla porządku),
+			przenosimy w odpowiednie miejsce i nadajemy prawa:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre># mv server.pem /var/lib/openssl/certs/jabber.pem
+# chown root:jabber /var/lib/openssl/certs/jabber.pem
+# chmod 640 /var/lib/openssl/certs/jabber.pem</pre></div></td></tr></tbody></table></p>
+		<p>
+			Została nam jeszcze konfiguracja Jabbera. W pliku
+			<i><tt>/etc/jabber/c2s.xml</tt></i> znajdujemy
+			tag "ssl-port" i odkomentujemy go:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>    &lt;!-- Older versions of jabberd support encrypted client connections
+    via an additional listening socket on port 5223. If you want
+    this (required to allow pre-STARTTLS clients to do SSL),
+    uncomment this --&gt;
+  &lt;ssl-port&gt;5223&lt;/ssl-port&gt;
+		 &lt;/local&gt;</pre></div></td></tr></tbody></table></p>
+		 <p>
+			Zdejmujemy komentarz także z tagu "require-starttls"
+			(kilka linijek wyżej):
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>    &lt;!-- Require STARTTLS. If this is enabled, clients must do STARTTLS
+    before they can authenticate. Until the stream is encrypted,
+    all packets will be dropped. --&gt;
+  &lt;require-starttls/&gt;</pre></div></td></tr></tbody></table></p>
+		<p>
+			Teraz w każdym z pięciu plików konfiguracyjnych
+			znajdujących się w <i><tt>/etc/jabber</tt></i>
+			tj. <i><tt>router.xml, sm.xml, resolver.xml, s2s.xml, c2s.xml</tt></i>
+			znajdujemy zakomentowany ciąg wskazujący na nasz
+			certyfikat:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>&lt;!--
+&lt;pemfile&gt;/etc/jabber/server.pem&lt;/pemfile&gt;
+--&gt;</pre></div></td></tr></tbody></table></p>
+		<p>
+			Kasujemy komentarze (czyli &lt;!-- i --&gt;) i wpisujemy
+			odpowiednią scieżkę do naszego certyfikatu:
+		</p>
+		<p align="left"><table bgcolor="#ffffff" cellspacing="2" cellpadding="5"><tbody><tr><td><div class="screen"><pre>&lt;pemfile&gt;/var/lib/openssl/certs/jabber.pem&lt;/pemfile&gt;</pre></div></td></tr></tbody></table></p>
+		<p>
+			Kolejny restart demona jabber i możemy cieszyć się
+			połączeniami szyfrowanymi.
+		</p>
+	
+	<h3>Zakończenie</h3>
+		
+		<p>
+			Opisane powyżej sposoby konfiguracji nie wyczerpują
+			oczywiście wszystkich aspektów. Zachęcamy do
+			odwiedzenia strony z <a href="http://jabberd.jabberstudio.org/2/docs/">oryginalną
+			dokumentacją jabbera</a>. Mimo,
+			że niektórym może sprawić problem język angielski, to
+			podane przykłady w jasny sposób omawiają także
+			zaawansowane zagadnienia.
+		</p>
+	
+</td>
+<td width="3%">&nbsp;</td>
+</tr></tbody></table>
+<div align="right"><table cellpadding="2"><tbody><tr>
+<td><a href="http://pl.docs.pld-linux.org/uslugi_heimdal.html"><img border="0" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAGFBMVEUcO+kXVu9Gcu2gt/nDz/jt8Pj8+On///8/14tcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1QsaFhoSnWz1hwAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAAg0lEQVQY033RzQnAIAwG0NA6gCOIoxRp7z10AA8uoOD6jT9JEyjm9j4laoSqCxYul3K2ytmCNFK6Ubhx+9x5szufCCEEmNyfFLGDAVpNZGKK3jsDzFZoSfIpXJwI0JWD0a9yQOdTwJ4B33cGh3yvU+8dO9S8WqDmiYGed3HX8j9+/+8FYvSSXEoG1YAAAAAASUVORK5CYII=" alt="&amp;lt;-"></a></td>
+<td><a href="http://pl.docs.pld-linux.org/uslugi_bazydanych__mysql.html"><img border="0" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAGFBMVEUcO+kXVu9Gcu2gt/nDz/jt8Pj8+On///8/14tcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1QsaFhktACeLeQAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAAfUlEQVQY033ROQ6AIBBA0ZGTGKLUdrQUJFxEOIGJ1xcZmEWNdO9HWeHUA94+0sOT1wYRmkVAc2ieOTSvHCDGCC5TgFD/diVvPXSX8QUEY231CNUFBwY2BuFd+6ZJNB+S1uscHuz7JeJ5FiKd13h1Hyap+yGimc2CX+/x+34X2OmQT58VtUwAAAAASUVORK5CYII=" alt="-&gt;"></a></td>
+</tr></tbody></table></div>
+</td>
+</tr></tbody></table>
+
+</body></html>
