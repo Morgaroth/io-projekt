@@ -1,23 +1,23 @@
 Konwertowanje daty
-qyglad iddertfikafora
+wyglad iddertfikafora
 kolor adminow
 Mozliwosc dla administratora
 Scalanie historii przez admina
 Bany
-Zapraszanie i alceptowanie
+Zapraszanie i akceptowanie
 szukanie po godzinach, zawartosci
 Edytowanie postow
 rozmiar zmienny okna pisania
-Graciczne buzki
-lajowanie odpowedzi
+Graficzne buzki
+lajkowanie odpowedzi
 Przesylanie plikow
-Chatroomy na pasku i przewijanke ich
-Oznaczanue grupy jako podzbior uzytkownikom i wysylanie im wiadomosci
-Calosc zrovic na oba warianty, implementacja tylko na androidak
-Identyfikacja uzytkoenika: nick dla roomow
+Chat-roomy na pasku i przewijanie ich
+Oznaczanue grupy jako podzbior uzytkownikow i wysylanie im wiadomosci zbiorczej
+Calosc zrobic na oba warianty, implementacja tylko na androida
+Identyfikacja uzytkownika: nick per roomow
 
-Opis problemu i wozja moze byc razdm bo tak
+Opis problemu i wizja moze byc razem bo tak latwiej
 
-Cash pamietany lokalnie
+Cache pamietany lokalnie
 
 Paldigo
